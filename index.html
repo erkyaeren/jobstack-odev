@@ -6,9 +6,69 @@
     <title>jobstack-ödev</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<h2 class="baslık">Nasıl çalışıyor?</h2>
+  <nav class="navbar">
+<img src="img/logo.png" alt="Jobstack Logo" class="logo-img">
+<ul class="navbar-menu">
+
+    <li class="dropdown">
+    <a href="#">Home <span class="arrow-down">▾</span></a>
+    
+    <ul class="dropdown-menu">
+      <li><a href="#">Hero One</a></li>
+      <li><a href="#">Hero Two</a></li>
+      <li><a href="#">Hero Three</a></li>
+    </ul>
+
+    <li class="dropdown">
+    <a href="#">Jops <span class="arrow-down">▾</span></a>
+    
+    <ul class="dropdown-menu">
+      <li><a href="#">Ana Sayfa 1</a></li> 
+      <li><a href="#">Ana Sayfa 2</a></li>
+      <li><a href="#">Ana Sayfa 3</a></li>
+    </ul>
+
+    <li class="dropdown">
+    <a href="#">Pages <span class="arrow-down">▾</span></a>
+    
+    <ul class="dropdown-menu">
+      <li><a href="#">Ana Sayfa 1</a></li>
+      <li><a href="#">Ana Sayfa 2</a></li>
+      <li><a href="#">Ana Sayfa 3</a></li>
+    </ul>
+
+    <li>
+    <a href="#">Contact</a>
+  </li>
+
+</ul>
+
+<div class="search-box">
+  <input type="text" placeholder="Search...">
+  
+  <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</div>
+
+<div class="user-profile">
+  <button id="profileBtn" class="profile-btn">
+    <img src="profil-resmin.jpg" alt="Kullanıcı Profili">
+  </button>
+  
+  <ul id="profileMenu" class="profile-dropdown-menu">
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Setting</a></li>
+    <li><a href="#">Lockscreen</a></li>
+    <li><a href="#">Logout</a></li>
+    <li><a href="#">Logout</a></li>
+  </ul>
+</div>
+
+</nav>
+
 <script src="script.js"></script>    
 </body>
 </html>
