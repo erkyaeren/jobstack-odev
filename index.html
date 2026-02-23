@@ -4,7 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jobstack-ödev</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #dcf2e7; /* Görseldeki arka plan rengi */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: transparent;
+}
+
+.logo-img {
+    height: 35px; /* Logonun boyutunu buradan ayarlayabilirsin */
+}
+
+/* Orta Menü */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0 auto; /* Menüyü ortalar */
+    gap: 35px;
+}
+
+.navbar-menu > li > a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-menu > li > a:hover {
+    color: #4a6cf7; 
+}
+
+.arrow-down {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Açılır Menü (Dropdown) */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f5f7fa;
+    color: #4a6cf7;
+}
+
+/* Arama Kutusu */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-right: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 140px;
+}
+
+.search-box input::placeholder {
+    color: #a0a0a0;
+}
+
+.search-icon {
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* Kullanıcı Profili */
+.user-profile {
+    position: relative;
+}
+
+.profile-btn {
+    background: none;
+    border: 2px solid #00d084; /* Görseldeki yeşil profil çerçevesi */
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.profile-btn:hover {
+    transform: scale(1.05);
+}
+
+.profile-btn img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Profil Açılır Menüsü */
+.profile-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+/* Bu kısmı script.js ile tıklamaya bağlayabilirsin ama şimdilik üzerine gelince açılsın */
+.user-profile:hover .profile-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.profile-dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+}
+
+.profile-dropdown-menu li a:hover {
+    background-color: #f5f7fa;
+}
+    </style>
 </head>
 <body>
   <nav class="navbar">
