@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
-    margin: 0;
+    margin: 0; /* dış boşluk bırakır */
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -11,8 +11,8 @@ body {
     background-color: #dcf2e7; /* Görseldeki arka plan rengi */
 }
 
-.navbar {
-    display: flex;
+.navbar { 
+    display: flex; /* yataydan hizalama */
     align-items: center;
     padding: 15px 5%;
     background-color: transparent;
@@ -24,7 +24,7 @@ body {
 
 /* Orta Menü */
 .navbar-menu {
-    display: flex;
+    display: flex; /* yataydan hizalama */
     list-style: none;
     margin: 0 auto; /* Menüyü ortalar */
     gap: 35px;
@@ -35,7 +35,7 @@ body {
     color: #1a1a1a;
     font-weight: 500;
     font-size: 15px;
-    display: flex;
+    display: flex; /* yataydan hizalama */
     align-items: center;
     gap: 5px;
     transition: color 0.3s;
@@ -82,7 +82,7 @@ body {
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
-    display: block;
+    display: block; /* belirli düzende kendi satırında durur */
     font-size: 14px;
     transition: background 0.2s;
 }
@@ -94,12 +94,12 @@ body {
 
 /* Arama Kutusu */
 .search-box {
-    display: flex;
+    display: flex; /* yataydan hizalama */
     align-items: center;
     background-color: #fff;
     padding: 8px 16px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 20px; /* sağdan boşluk bırakır */
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
@@ -127,13 +127,13 @@ body {
 
 .profile-btn {
     background: none;
-    border: 2px solid #00d084; /* Görseldeki yeşil profil çerçevesi */
+    border: 2px solid #00d084; 
     border-radius: 50%;
     cursor: pointer;
     padding: 2px;
-    display: flex;
+    display: flex; /* yataydan hizalama */
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* esnek kutu içerisindeki öğeleri ortalar */
     transition: transform 0.2s;
 }
 
@@ -177,7 +177,7 @@ body {
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
-    display: block;
+    display: block; /* belirli düzende kendi satırında durur */
     font-size: 14px;
 }
 
@@ -185,7 +185,7 @@ body {
     background-color: #f5f7fa;
 }
 .iconbosluk{
-  display: flex;
+  display: flex; /* yataydan hizalama */
   gap: 20px;
   padding: 20px;
   justify-content: center;
@@ -209,15 +209,15 @@ body {
 
 /* yan yana dizme  */
 .row-between {
-  display: flex;
+  display: flex; /* yataydan hizalama */
   justify-content: space-between; /* Birini sola, birini sağa yaslar */
   align-items: center;
-  margin: 15px 0;
+  margin: 15px 0; /* dış boşluk bırakır */
 }
 
 /* Linkleri yan yana diz */
 .nav-links, .social-box {
-  display: flex;
+  display: flex; /* yataydan hizalama */
   gap: 20px; /* Aralarındaki boşluk */
 }
 
